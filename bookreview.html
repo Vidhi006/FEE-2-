@@ -84,6 +84,9 @@
          box-sizing: border-box; 
          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.475);
         }
+        mark{
+            background-color: aquamarine; 
+        }
         .ab{
             width:30% ;
             background-color:rgb(160, 200, 216);
@@ -131,6 +134,9 @@
             background-repeat: no-repeat;
             background-position: center;
             /* background-attachment: fixed; */
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.475);
+            width:700px ;
+
          
         }
         fieldset{
@@ -176,7 +182,7 @@
         .email-link {
             color: #555;
             text-decoration: underline;
-            font-family: Arial, sans-serif;
+            /* font-family: Arial, sans-serif; */
         }
 
         .email-link:hover {
@@ -184,6 +190,11 @@
         }
         .m{
             color: azure;
+        }
+        img{
+            margin-top:20px;
+            border-radius: 10%;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.475);
         }
     </style>
 </head>
@@ -207,9 +218,9 @@
     <div class="cd">
     <div class="ab"> 
     <FIELDset class="d">
-        <legend class="c">
+        <!-- <legend class="c">
             Book Title 1
-        </legend>
+        </legend> -->
       <center><label for=" book name">BOOK NAME:</label>
         <input type="text" required><br><BR>
         <label for=" author name">AUTHOR NAME:</label>
@@ -219,9 +230,9 @@
     </FIELDset></div>
     <div class="bc">
     <FIELDset class="e">
-        <legend class="c">
+        <!-- <legend class="c">
             Book Title 2
-        </legend>
+        </legend> -->
         <center><label for=" book name">BOOK NAME:</label>
         <input type="text" required><br><BR>
         <label for=" author name">AUTHOR NAME:</label>
@@ -230,9 +241,9 @@
     </FIELDset></div>
     <div class="de"> 
     <FIELDset class="e">
-    <legend class="c">
+    <!-- <legend class="c">
             Book Title 3
-        </legend>
+        </legend> -->
         <center><label for=" book name">BOOK NAME:</label>
         <input type="text" required><br><BR>
         <label for=" author name">AUTHOR NAME:</label>
@@ -243,9 +254,9 @@
     <div class="cd">
         <div class="ab"> 
         <FIELDset class="d">
-        <legend class="c">
+        <!-- <legend class="c">
                 Book Title 4
-            </legend>
+            </legend> -->
             <center> <label for=" book name">BOOK NAME:</label>
             <input type="text" required><br><BR>
             <label for=" author name">AUTHOR NAME:</label>
@@ -254,9 +265,9 @@
         </FIELDset></div>
         <div class="bc">
         <FIELDset class="e">
-            <legend class="c">
+            <!-- <legend class="c">
                 Book Title 5
-            </legend>
+            </legend> -->
          <center> <label for=" book name">BOOK NAME:</label>
             <input type="text" required><br><BR>
             <label for=" author name">AUTHOR NAME:</label>
@@ -265,25 +276,25 @@
         </FIELDset></div>
         <div class="de"> 
         <FIELDset class="e">
-         <legend class="c">
+         <!-- <legend class="c">
                 Book Title 6
-            </legend>
+            </legend> -->
             <center> <label for=" book name">BOOK NAME:</label>
             <input type="text" required><br><BR>
             <label for=" author name">AUTHOR NAME:</label>
             <input type="text" required><br><br>
             <button type="submit">submit</button></center>
         </FIELDset>
-        </div></div><br><br><br><br>
-        <div class="z"><center class="z"><h1 class="m">Looking for something new to read?</h1>
-          <h4 class="m"> Trust real people, not robots, to give you book recommendations.</h4><br>
+        </div></div><br><br><br>
+      <center> <div class="z"><center class="z"><h1 class="m">Looking for something new to read?</h1>
+          <h4 class="n"> <mark >Trust real people, not robots, to give you book recommendations.</mark></h4><br>
           <a href="https://www.google.com" class="google-btn">
             Google
             <div class="google-logo"></div>
           </a><br>
           <h2 >Or sign up with an 
             <a href="mailto:example@example.com" class="email-link">email address</a></h2>
-        </center></div><br><br><br>
+        </center></div></center><br><br><br><br>
         <footer>
             <p >&copy; 2024 Book Review Central. All rights reserved.</p>
         </footer>
