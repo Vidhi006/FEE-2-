@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 30vh;
+            width: 20vw;
+            border: 1px solid black;
+            background-color: aqua;
+            transition: border-radius 3s ease;
+            transition: background-color 0.5s ease;
+        }
+        section:hover{
+            border-radius: 30%;
+            background-color: rgb(235, 175, 235);
+        }
+        .main{
+            height: 40vh;
+            width: 60vw;
+            background-color: rgb(238, 240, 173);
+            border: 1px solid black;
+            display: grid;
+            align-items: center;
+            padding-left: 2vw;
+        }
+        #div1 , #div2 , #div3 , #div4 , #div5{
+            background-color: rgb(243, 167, 236);
+            height: 6vh;
+            width: 10vw;
+            transition: width 1s ;
+        }
+        #div1 {transition-timing-function: linear;}
+        #div2 {transition-timing-function: ease;}
+        #div3 {transition-timing-function: ease-in;}
+        #div4 {transition-timing-function: ease-out;}
+        #div5 {transition-timing-function: ease-in-out;}
+        #div1:hover , #div2:hover , #div3:hover , #div4:hover , #div5:hover{
+          width: 20vw;
+        }
+    </style>
+</head>
+<body>
+    <section></section><br><br>
+    <div class="main">
+        <div id="div1">linear</div>
+        <div id="div2">ease</div>
+        <div id="div3">ease-in</div>
+        <div id="div4">ease-out</div>
+        <div id="div5">ease-in-out</div>
+    </div>
+</body>
+</html>
