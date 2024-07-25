@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T SHOP</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: black;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .c {
+            display: flex;
+            height: 65px;
+            border-bottom: 2px solid black;
+        }
+        .b {
+            background-color: rgba(199, 251, 29, 0.933);
+            width: 13%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px solid black;
+        }
+        .b h1 {
+            margin: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 87%;
+        }
+        .nav a {
+            display: block;
+            padding: 0 80px;
+            height: 65px;
+            line-height: 62px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            border-right: 2px solid black;
+        }
+        .nav .j:hover {
+            background-color: black;
+            color: rgba(199, 251, 29, 0.933);
+        }
+        .nav img{
+            height:61%;
+            padding-top: 17px;
+        }
+        .e{
+            display: flex;
+           
+        }
+        .f{
+            padding-top: 18px;
+            height: 80px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        span{
+            height: 100vh;
+            width: 270vw;
+            font-size: 100px;
+        }
+        .g{
+            font-size: 20px;
+        }
+        .h{
+            height: 40px;
+            background-color:rgba(199, 251, 29, 0.933); 
+            width:22vw;
+            padding-top: 5px;
+        }
+        .i{
+            font-size: 26px;
+        }
+        .k{
+            background-color: white;
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        .img1{
+            width:25%;
+        }
+        .img2{
+            width:50%;
+        }
+        .img3{
+            width:25%;
+        }
+    .img1::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80vh;
+        width: 25vw;
+        background: linear-gradient(180deg,#d7ff380e , #ccff01);
+         opacity: 0;
+         z-index: 0;
+         transition: opacity 0.5s ease;
+        }
+    .img1:hover::after{
+        opacity: 0.4;
+    }
+    .img2::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80vh;
+        width: 50%;
+        margin-left: 25vw;
+        background: linear-gradient(180deg,#d7ff380e , #ccff01);
+         opacity: 0;
+         z-index: 1;
+         transition: opacity 0.5s ease;
+        }
+    .img2:hover::after{
+        opacity: 0.4;
+    }
+    .img3::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80vh;
+        width: 23%;
+        margin-left: 75vw;
+        background: linear-gradient(180deg,#d7ff380e , #ccff01);
+         opacity: 0;
+         z-index: 0;
+         transition: opacity 0.5s ease;
+        }
+    .img3:hover::after{
+        opacity: 0.4;
+    }
+       .i1{
+        width: 98%;
+        height: 80vh;
+       }
+       .i2{
+        width: 99%;
+        height: 80vh;
+       }
+       .i3{
+        width: 99%;
+        height: 80vh;
+        padding-left: 4px;
+       }
+       .tshirtcontainer{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-evenly;
+            align-content:space-around;
+}
+.gridd{
+  height: 30vw;
+  width: 18vw;
+  overflow: hidden;
+}
+
+.nice{
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.nice:hover{
+  transform: scale(1.1);
+}
+
+.tshirtname{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 350;
+  font-size: large;
+  margin-left: 1vw;
+  margin-top: 1.5vh;
+}
+.price{
+  margin-left: 1vw;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 350;
+  font-size: large;
+}
+.imgcontainer{
+  overflow: hidden;
+}
+span{
+    font-size: 10vh;
+}
+button{
+    height:40px;
+    width: 200px;
+    background-color: black;
+    color: rgba(199, 251, 29, 0.933);
+}
+button:hover{
+    color: black;
+    background-color: rgba(199, 251, 29, 0.933);
+}
+.l{
+    height: 90vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+}
+.m{
+    width:60%;
+    background: linear-gradient(to top,rgba(216, 247, 114, 0.933),#ffffff);
+}
+.n{
+    width:40%;
+}
+.electric{
+    height: 8vh;
+   margin-top: 150px ;
+}
+p{
+   font-size: 20px;
+}
+.o{
+    font-size: 120px;
+   
+}
+.damn{
+    height: 100%;
+    width: 100%;
+}
+.hello{
+    margin-top: 3vh;
+    text-align: center;
+    font-family: Bebas Neue,Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-bottom: 3vh;
+    text-decoration: underline;
+    color: black;
+    font-weight:bold;
+}
+.arrowholder{
+    display: grid; 
+     justify-content: center;
+}
+.arrow{
+    height: 50px;
+    width: 80%;
+    font-weight:bold;
+}
+.arrowholder{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.arrowd{
+    height: 65px;
+    width: 100%;
+}
+.end{
+    margin-top: 3vh;
+    text-align: center;
+    font-family: Bebas Neue,Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-bottom: 3vh;
+    text-decoration: underline;
+    color: black;
+}
+.nonmobile{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    border: 1px solid black;
+}
+.upper{
+    height: 80%;
+    display: flex;
+}
+.lower{
+    height: 20%;
+    display: flex;
+}
+.upper1{
+    width: 30%;
+    height:100% ;
+    background-color: #130718;
+
+}
+.upper2{
+    width:70% ;
+    height:100% ;
+    display: flex;
+}
+.lower1{
+    width:30% ;
+    height:100% ;
+}
+.lower2{
+    width:70% ;
+    height:100% ;
+    background-color: #ccff01;
+    border: 1px solid black;
+}
+.l1{
+    width:33%;  
+   margin-top: 84px;
+}
+.l2{
+    width:33%;
+    margin-top: 84px;
+}
+.l3{
+    width:33%;
+    margin-top: 84px;
+}
+a{
+    text-decoration: none;
+    color: #130718;
+}
+.e1{
+    padding-top: 6px;
+}
+.okee{
+    color: white;
+    /* padding-top: 10px; */
+}
+.blackbox{
+    padding-top: 100px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <p>Sale is on! 25% off sitewide using TEES25 at checkout</p>
+    </header>   
+    <div class="c">
+        <div class="b">
+            <h1>T SHOP</h1>
+        </div>
+        <div class="nav">
+            <a href="" class="j">New</a>
+            <a href="" class="j">Women</a>
+            <a href="" class="j">Men</a>
+            <a href="" class="e">
+                <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png" alt="a">
+                <span class="g">Login</span>      
+           </a>
+        </div>
+    </div>
+    <h1 class="f"><center><span> T SHOP</span></center></h1><br><br><br>
+   <center><div class="h">
+       <span class="i">There's One For Everyone</span> 
+    </div></center> <br><br>
+    <div class="k">
+        <div class="img1">
+            <img src="https://static.wixstatic.com/media/c837a6_412c6d4e5a8f49f1bd70c5a9f60bd99d~mv2.jpg/v1/fill/w_251,h_449,q_90/c837a6_412c6d4e5a8f49f1bd70c5a9f60bd99d~mv2.jpg" alt="" class="i1">
+        </div>
+        <div class="img2">
+           <center><img src="https://static.wixstatic.com/media/c837a6_3e8310c6d6474d42a3e2925a1f4ed3a3~mv2.jpg/v1/fill/w_512,h_449,fp_0.5_0.43,q_90/c837a6_3e8310c6d6474d42a3e2925a1f4ed3a3~mv2.jpg" alt="" class="i2">
+            </center>
+        </div>
+        <div class="img3">
+                <img src="https://static.wixstatic.com/media/c837a6_3a03706bd90e4f289e7aed0d2f11c992~mv2.jpg/v1/fill/w_251,h_449,q_90/c837a6_3a03706bd90e4f289e7aed0d2f11c992~mv2.jpg" alt="" class="i3">
+        </div>
+    </div>
+    <br><br>
+    <center><span>New Drops</span></center><br>
+<div class="tshirtcontainer">
+    <div class="gridd">
+        <div class="imgcontainer">
+            <img src="https://static.wixstatic.com/media/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg" alt="" class="nice" >
+        </div>
+        <p class="tshirtname">Orange tshirt</p>
+        <p class="price">₹399 <del>799</del> </p>
+    </div>
+    <div class="gridd">
+        <div class="imgcontainer">
+            <img src="https://static.wixstatic.com/media/c837a6_8ea5cc0a06664ef6a3c1cf64e1cb5a27~mv2.jpg/v1/fill/w_205,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_8ea5cc0a06664ef6a3c1cf64e1cb5a27~mv2.jpg" alt="" class="nice">
+        </div>
+        <p class="tshirtname">White tshirt</p>
+        <p class="price">₹199 <del>499</del> </p>
+    </div>
+    <div class="gridd">
+        <div class="imgcontainer">
+            <img src="https://static.wixstatic.com/media/c837a6_ce32dd298b274ba280efa267e075be21~mv2.jpg/v1/fill/w_205,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_ce32dd298b274ba280efa267e075be21~mv2.jpg" alt="" class="nice">
+        </div>
+        <p class="tshirtname">Green tshirt</p>
+        <p class="price">₹299 <del>599</del> </p>
+    </div>
+    <div class="gridd">
+        <div class="imgcontainer">
+            <img src="https://static.wixstatic.com/media/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg/v1/fill/w_205,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg" alt="" class="nice">
+        </div>
+        <p class="tshirtname">Blue tshirt</p>
+        <p class="price">₹599 <del>1999</del> </p>
+    </div>
+    <div class="gridd">
+        <div class="imgcontainer">
+            <img src="https://static.wixstatic.com/media/c837a6_944cb31b5c7d4659b7a0c6612b4df573~mv2.jpg/v1/fill/w_205,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_944cb31b5c7d4659b7a0c6612b4df573~mv2.jpg" alt="" class="nice">
+        </div>
+        <p class="tshirtname">White tshirt</p>
+        <p class="price">₹750 <del>1299</del> </p>
+    </div>
+    <div class="gridd">
+        <div class="imgcontainer">
+            <img src="https://static.wixstatic.com/media/c837a6_6a83893e75e048b3a61c7a8711b93da3~mv2.jpg/v1/fill/w_205,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_6a83893e75e048b3a61c7a8711b93da3~mv2.jpg" alt="" class="nice">
+        </div>
+        <p class="tshirtname">White thirt</p>
+        <p class="price">₹499 <del>999</del> </p>
+    </div>
+    <div class="gridd">
+        <div class="imgcontainer">
+            <img src="https://static.wixstatic.com/media/c837a6_fd300737ecf3406b83fd9be5d67463e4~mv2.jpg/v1/fill/w_205,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_fd300737ecf3406b83fd9be5d67463e4~mv2.jpg" alt="" class="nice">
+        </div>
+        <p class="tshirtname">Yellow shirt</p>
+        <p class="price">₹150 <del>599</del> </p>
+    </div>
+    <div class="gridd">
+        <div class="imgcontainer">
+            <img src="https://static.wixstatic.com/media/c837a6_0ab9ff5bbc6f41a5b2dffae389cfb2b7~mv2.jpg/v1/fill/w_205,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_0ab9ff5bbc6f41a5b2dffae389cfb2b7~mv2.jpg" alt="" class="nice">
+        </div>
+        <p class="tshirtname">White shirt</p>
+        <p class="price">₹199 <del>499</del> </p>
+    </div>
+    </div>
+    <br>
+    <center><button>Shop now</button></center>
+    <br><br>
+    <div class="l">
+        <div class="m">
+           <center><img src="https://www.svgrepo.com/show/478811/electric.svg" alt="" class="electric" alt="" >
+           <br><br><br>
+          <p>SALE IS ON!</p><br>
+            <p class="o"style=font-weight:bold>25% OFF</p><br><br>
+            <p>25% off sitewide using TEES25 at checkout</p>
+        </center>
+        </div>
+        <div class="n">
+            <img src="https://static.wixstatic.com/media/c837a6_2749f733af59407699862291aaef4b44~mv2.jpg/v1/fill/w_440,h_550,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_2749f733af59407699862291aaef4b44~mv2.jpg" alt="" class="damn" alt="">
+        </div>
+    </div>
+    <br><br>
+    <div class="nonmobile">
+        <div class="arrowholder" >
+            <img src="https://www.reshot.com/preview-assets/icons/GKTFPJDL97/arrow-right-GKTFPJDL97.svg" alt="" class="arrowd" >
+        </div>
+        <a href="#"><p class="end">GET 10% OFF YOUR FIRST ORDER!</p></a>
+        <div class="arrowholder" >
+            <img src="https://www.reshot.com/preview-assets/icons/UZDAC2LESG/arrow-left-UZDAC2LESG.svg" alt="" class="arrowd" >
+        </div>
+    </div> <br>
+    <div class="footer">
+        <div class="upper">
+            <div class="upper1">
+              <center><div class="blackbox">
+                    <p class="okee">TShop</p>
+                    <p class="okee" >Tel. 123-456-789</p>
+                </div></center>
+            </div>
+            <div class="upper2">
+                <div class="l1">
+                 <center><p>Shop</p><br><br>
+                    <a href="">New</a><br><br>
+                    <a href="">Men</a><br><br>
+                    <a href="">Women</a></center>
+                </div>
+                <div class="l2">
+                  <center><p>Our store</p><br><br>
+                    <a href="">About Us</a><br><br>
+                    <a href="">Subscribe</a><br><br>
+                    <a href="">FAQ</a></center>
+                </div>
+                <div class="l3">
+                  <center><p>Terms & Conditions</p><br><br>
+                    <a href="">Store Policy</a><br><br>
+                    <a href="">Shipping & Return</a><br><br>
+                    <a href="">Payment method</a></center></div>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="lower1">
+              <center><div class="e1">
+                    <img src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0fdef751204647a3bbd7eaa2827ed4f9.png" alt="">
+                    <img src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="">
+                    <img src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/78aa2057f0cb42fbbaffcbc36280a64a.png" alt="">
+                    <img src="https://static.wixstatic.com/media/8f6f59264a094af0b46e9f6c77dff83e.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8f6f59264a094af0b46e9f6c77dff83e.png" alt="">
+                    <img src="https://static.wixstatic.com/media/11062b_6e7994bdd94b41178720ff1641a0f323~mv2.png/v1/fill/w_33,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_6e7994bdd94b41178720ff1641a0f323~mv2.png" alt="">
+                </div></center>  
+            </div>
+            <div class="lower2">
+              <center><p class="e1">© 2024 by TShop.</p></center>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
