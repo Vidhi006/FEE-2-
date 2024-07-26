@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college admission form</title>
+    <style>
+        /* body{
+            justify-content: center;
+            align-items: center;
+        } */
+        fieldset{
+            margin: 0 auto;
+            width:75%;
+            /* padding: 100px; */
+            box-sizing: border-box;
+        }
+        *{
+            background-color:rgb(201, 176, 247);
+        }
+        fieldset{
+            background-color:rgb(225, 174, 223);
+        }
+        /* h3{
+            background-color: whitesmoke;
+        } */
+        label{
+            background-color:rgb(225, 174, 223);
+        }
+        input{
+            background-color:rgb(225, 174, 223);
+            outline: none;
+        }
+        option{
+           background-color:rgb(201, 176, 247);
+        }
+        center{
+            background-color:rgb(225, 174, 223);
+        }
+        select{
+            background-color:rgb(225, 174, 223);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+        button:active {
+            background-color: #e31cae; /* Green */
+            color: white;
+        }
+        h1{
+            text-shadow:2px 2px 5px rgba(247, 0, 255, 0.716);
+            background-color: rgb(223, 174, 225);
+        }
+        h2{
+            background-color:rgb(225, 174, 223);
+        }
+        p{
+            background-color:rgb(225, 174, 223);
+        }
+        img{
+            width:120px;
+            height: 120px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .a{
+            display: flex;
+            width:100%;
+            height: 180px;
+            background-color:rgb(225, 174, 223);
+        }
+        .b{
+            width:30%;
+            height: 180px; 
+            background-color:rgb(225, 174, 223);
+        }
+        .c{
+            width:70%;
+            height: 180px;
+            background-color:rgb(225, 174, 223);
+        }
+    </style>
+</head>
+<body>
+   <fieldset>
+    <div class="a">
+       <div class="b"> 
+    <img src="data:image/png;base64,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" alt="a">
+    </div>
+    <div class="c">
+    <h1>COLLEGE ADMISSION FORM</h1></div></div>
+    <label for="name">FIRST NAME:</label>
+    <input type="text" required><br><br><br>
+    <label for="username">MIDDLE NAME:</label>
+    <input type="text"><br><br><BR>
+    <label for="username">LAST NAME:</label>
+    <input type="text" required><br><br><br>
+    <label for="username">DOB:</label>
+    <input type="datetime-local" required><br><br><br>
+    <label for="name">EMAIL:</label>
+    <input type="text" required><br><br><br>
+    <label for="phone no">PHONE NUMBER:</label>
+        <select name="country code" id="country code">
+            <option value="+91">+91</option>
+            
+            <option value="+90">+90</option>
+            
+            <option value="+73">+73</option>
+            
+            <option value="+11">+11</option>
+        </select>
+    <input type="number" required><br><br><br> 
+    <label for="name">NAME OF THE SCHOOL:</label>
+    <input type="text" required><br><br><br>  
+    <label for="username">FIRST ATTENDED:</label>
+    <input type="datetime-local" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="username">LAST ATTENDED:</label>
+    <input type="datetime-local" required><br><br><br>
+    GENDER:
+    <label for="age">MALE</label>
+    <input type="radio" name="gender">
+    <label for="age">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FEMALE </label>
+    <input type="radio" name="gender">
+    <label for="age">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFER NOT TO SAY</label>
+   <input type="radio" name="gender"><br><br><br>
+    <label for="name">ADDRESS:</label>
+    <input type="text" required placeholder="H.no.">
+    <label for="name"></label>
+    <input type="text" required placeholder="street address">
+    <label for="name"></label>
+    <input type="text" required placeholder="city"><br><br><br>
+    <label for="name">FATHER NAME:</label>
+    <input type="text" required value="Mr."><br><br><br>
+    <label for="phone no"> FATHER'S PHONE NUMBER:</label>
+        <select name="country code" id="country code">
+            <option value="+91">+91</option>
+            
+            <option value="+90">+90</option>
+            
+            <option value="+73">+73</option>
+            
+            <option value="+11">+11</option>
+        </select>
+        
+    <input type="number" required><br><br><br>
+    <label for="name">OFFICE ADDRESS:</label>
+    <input type="text" required placeholder="H.no.">
+    <label for="name"></label>
+    <input type="text" required placeholder="street address">
+    <label for="name"></label>
+    <input type="text" required placeholder="city"><br><br><br>
+    <label for="name">MOTHER NAME:</label>
+    <input type="text" required value="Mrs."><br><br><br>
+    <label for="phone no"> MOTHER'S PHONE NUMBER:</label>
+        <select name="country code" id="country code">
+            <option value="+91">+91</option>
+            <option value="+90">+90</option>
+            <option value="+73">+73</option>
+            <option value="+11">+11</option>
+        </select><br><br><br>
+        <label for="phone no"> PROGRAM APPLIED FOR:</label>
+        <select name="country code" id="country code">
+            <option value="+91">select</option>
+            <option value="+91">Bachelor of Engineering</option>
+            <option value="+90">Bachelor in Arts</option>
+            <option value="+73">Bachelor in commerce </option>
+            <option value="+11">Bachelor in Science Medical & Non-Medical</option>
+            <option value="+11">Bachelor of Business Administration</option>
+        </select><br><br><br>
+        <label for="course">SELECT COURSE:</label>
+        <select name="course" id="course">
+        <option value="">select the course</option>
+        <option value="">undergraduation</option>
+        <option value="">postgraduation</option>
+    </select><br><br>
+    <h2>Applicant Signature</h2>
+    <button type="file">Choose File</button><p>No file chosen</p>&nbsp;&nbsp;&nbsp;&nbsp;
+    <h2>Applicant Photo</h2>
+    <button type="file">Choose File</button><p>No file chosen</p>
+    <center>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </center>
+</fieldset>   
+</body>
+</html>  
